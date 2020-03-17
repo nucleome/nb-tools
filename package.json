@@ -1,0 +1,38 @@
+{
+  "name": "@nucleome/nb-tools",
+  "version": "0.0.1",
+  "description": "nucleome browser tools",
+  "keywords": [
+    "nucleome",
+    "browser"
+  ],
+  "homepage": "https://vis.nucleome.org",
+  "license": "BSD-3-Clause",
+  "author": "Xiaopeng Zhu (https://github.com/nimezhu)",
+  "main": "dist/nb-tools.js",
+  "unpkg": "dist/nb-tools.min.js",
+  "jsdelivr": "dist/nb-tools.min.js",
+  "module": "src/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nucleome/nb-tools.git"
+  },
+  "dependencies": {
+    "d3-format": "^1.4.3"
+  },
+  "scripts": {
+    "pretest": "rollup -c",
+    "prepublishOnly": "rm -rf dist"
+  },
+  "devDependencies": {
+    "eslint": "5",
+    "rollup": "^0.64.1",
+    "rollup-plugin-commonjs": "^9.3.4",
+    "rollup-plugin-node-resolve": "^4.2.3",
+    "rollup-plugin-terser": "1",
+    "tape": "4"
+  },
+  "bugs": {
+    "url": "https://github.com/nucleome/nb-tools/issues"
+  }
+}
