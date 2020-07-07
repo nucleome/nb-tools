@@ -1,6 +1,6 @@
 {
   "name": "@nucleome/nb-tools",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "nucleome browser tools",
   "keywords": [
     "nucleome",
@@ -9,9 +9,9 @@
   "homepage": "https://vis.nucleome.org",
   "license": "BSD-3-Clause",
   "author": "Xiaopeng Zhu (https://github.com/nimezhu)",
-  "main": "dist/nb-tools.js",
-  "unpkg": "dist/nb-tools.min.js",
-  "jsdelivr": "dist/nb-tools.min.js",
+  "main": "dist/@nucleome/nb-tools.js",
+  "unpkg": "dist/@nucleome/nb-tools.min.js",
+  "jsdelivr": "dist/@nucleome/nb-tools.min.js",
   "module": "src/index.js",
   "repository": {
     "type": "git",
@@ -22,7 +22,7 @@
   },
   "scripts": {
     "pretest": "rollup -c",
-    "prepublishOnly": "rm -rf dist"
+    "prepublishOnly": "rm -rf ./dist && rollup -c"
   },
   "devDependencies": {
     "eslint": "5",

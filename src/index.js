@@ -17,3 +17,8 @@ export {default as regionsText} from "./regionsText"
 export {default as strToColor} from "./strToColor"
 
 export {default as webglSupport} from "./webglSupport"
+
+export {default as scaleCoord} from "./scaleCoord"
+
+export {default as tablePrint} from "./tablePrint"
+export {default as trackManager} from "./trackManager"
