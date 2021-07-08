@@ -1,6 +1,6 @@
 {
   "name": "@nucleome/nb-tools",
-  "version": "0.0.3",
+  "version": "0.0.5",
   "description": "nucleome browser tools",
   "keywords": [
     "nucleome",
@@ -18,12 +18,18 @@
     "url": "git+https://github.com/nucleome/nb-tools.git"
   },
   "dependencies": {
-    "d3-format": "^1.4.3"
+    "d3-format": "^1.4.3",
+    "d3-scale": "^3.2.1",
+    "d3-selection": "^1.4.1"
   },
   "scripts": {
     "pretest": "rollup -c",
     "prepublishOnly": "rm -rf ./dist && rollup -c"
   },
+  "files": [
+    "dist/@nucleome/nb-tools.js",
+    "dist/@nucleome/nb-tools.min.js"
+  ],
   "devDependencies": {
     "eslint": "5",
     "rollup": "^0.64.1",

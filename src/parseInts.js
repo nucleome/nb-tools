@@ -1,7 +1,4 @@
 export default function(s) {
-  var a = []
-  s.split(",").forEach(function (d) {
-    a.push(parseInt(d))
-  })
-  return a;
+  var v = s.replace(/,$/,"")
+  return v.split(",").map( (d) => (parseInt(d)))
 }
